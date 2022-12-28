@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Dolar Blue",
+    "description": "Precio del dolar en Argentina.",
+    "version": "0.1",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "./imgs/dolar.png"
+    },
+    "content_scripts":[
+        {
+            "matches":["https://listado.mercadolibre.com.ar/*"],
+            "js":["./scripts/meliListado.js"]
+        }
+    ]
+}
